@@ -10,6 +10,10 @@ class VacationHouse extends Model
         'name',
         'price',
         'description',
-        'image',
+        'images',
+    ];
+
+    protected $casts = [
+        'images' => 'array',
     ];
 }

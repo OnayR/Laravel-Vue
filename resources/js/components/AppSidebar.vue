@@ -18,6 +18,11 @@ const mainNavItems: NavItem[] = [
         title: 'Home',
         href: '/',
         icon: House,
+    },
+    {
+        title: 'Test',
+        href: '/test',
+        icon: House,
     }
 ];
 
