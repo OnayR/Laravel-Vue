@@ -15,15 +15,25 @@ const mainNavItems: NavItem[] = [
         icon: LayoutGrid,
     },
     {
-        title: 'Home',
-        href: '/',
+        title: 'Create Vacation Home',
+        href: '/vacation-home-create',
         icon: House,
     },
     {
-        title: 'Test',
-        href: '/test',
+        title: 'Vacation Homes',
+        href: '/vacation-homes',
         icon: House,
-    }
+    },
+    {
+        title: 'My Vacation Homes',
+        href: '/my-vacation-homes',
+        icon: House,
+    },
+    {
+        title: 'Users',
+        href: '/users',
+        icon: House,
+    },
 ];
 
 const footerNavItems: NavItem[] = [

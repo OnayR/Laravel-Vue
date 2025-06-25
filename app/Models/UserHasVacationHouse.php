@@ -13,4 +13,9 @@ class UserHasVacationHouse extends Model
         'end_date',
         'number_of_guests',
     ];
+
+    public function vacationHouse()
+{
+    return $this->belongsTo(VacationHouse::class, 'vacation_house_id');
+}
 }

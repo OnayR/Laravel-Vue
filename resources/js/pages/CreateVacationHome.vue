@@ -39,8 +39,7 @@ const showSnackbar = (msg: string) => {
     snackbarElement.remove();
   }, 3000);
 };
-// console.log('Test page loaded');
-// showSnackbar('Welcome to the Test Page!');
+
 </script>
 
 <template>
@@ -77,21 +76,5 @@ const showSnackbar = (msg: string) => {
         </form>
         </div>
 
-         <div class="w-2/3 mx-auto mt-16">
-        <h2 class="mb-4 text-lg font-bold">Vacation Homes</h2>
-        <ul v-if="vacationHomes.length">
-          <li v-for="home in vacationHomes" :key="home.id" class="mb-6 p-4 border rounded shadow-sm dark:border-gray-700 bg-white dark:bg-gray-900">
-            <div class="font-semibold text-lg">{{ home.name }}</div>
-            <div class="text-gray-600 dark:text-gray-300">Price: ${{ home.price }}</div>
-            <div class="mb-2 text-gray-700 dark:text-gray-200">Description: {{ home.description }}</div>
-            <div v-if="home.images && home.images.length">
-              <div class="flex flex-wrap gap-2">
-                <img v-for="(img, idx) in home.images" :key="idx" :src="`/storage/${img}`" alt="Vacation Home Image" class="w-24 h-24 object-cover rounded" />
-              </div>
-            </div>
-          </li>
-        </ul>
-        <div v-else class="text-gray-500 dark:text-gray-400">No vacation homes found.</div>
-      </div>
     </AppLayout>
 </template>

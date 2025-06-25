@@ -11,7 +11,7 @@ import { Link } from '@inertiajs/vue3';
 
 const breadcrumbs: BreadcrumbItem[] = [
     {
-        title: 'Vacation Homes',
+        title: 'Test',
         href: '/dashboard',
     },
 ];
@@ -118,7 +118,7 @@ function openVacationHome(home: any) {
 </script>
 
 <template>
-    <Head title="Vacation Homes" />
+    <Head title="Test" />
 
     <AppLayout :breadcrumbs="breadcrumbs">
 
